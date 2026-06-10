@@ -1,0 +1,164 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#667eea,#764ba2);
+    transition:0.5s;
+}
+
+.container{
+    width:500px;
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+
+h1{
+    text-align:center;
+    color:#333;
+    margin-bottom:20px;
+}
+
+.input-box{
+    display:flex;
+    gap:10px;
+}
+
+input{
+    flex:1;
+    padding:12px;
+    border:2px solid #ddd;
+    border-radius:10px;
+    outline:none;
+    font-size:16px;
+}
+
+input:focus{
+    border-color:#667eea;
+}
+
+button{
+    border:none;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+#addBtn{
+    background:#667eea;
+    color:white;
+    padding:12px 20px;
+    border-radius:10px;
+}
+
+#addBtn:hover{
+    transform:scale(1.05);
+}
+
+#themeBtn{
+    width:100%;
+    margin-top:15px;
+    background:#764ba2;
+    color:white;
+    padding:12px;
+    border-radius:10px;
+}
+
+#themeBtn:hover{
+    opacity:0.9;
+}
+
+h3{
+    margin-top:20px;
+    text-align:center;
+    color:#444;
+}
+
+#count{
+    color:#667eea;
+    font-weight:bold;
+}
+
+ul{
+    list-style:none;
+    margin-top:20px;
+}
+
+li{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:12px;
+    margin-bottom:10px;
+    background:#f5f5f5;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+li:hover{
+    transform:translateY(-2px);
+}
+
+.taskText{
+    flex:1;
+    text-align:left;
+    font-weight:500;
+}
+
+.completeBtn{
+    background:#28a745;
+    color:white;
+    padding:8px 12px;
+    border-radius:8px;
+    margin-right:5px;
+}
+
+.deleteBtn{
+    background:#dc3545;
+    color:white;
+    padding:8px 12px;
+    border-radius:8px;
+}
+
+.completeBtn:hover,
+.deleteBtn:hover{
+    transform:scale(1.05);
+}
+
+.completed{
+    background:#d4edda;
+    text-decoration:line-through;
+    color:#555;
+}
+
+.dark{
+    background:linear-gradient(135deg,#1f1f1f,#000000);
+}
+
+.dark .container{
+    background:#2b2b2b;
+}
+
+.dark h1,
+.dark h3,
+.dark .taskText{
+    color:white;
+}
+
+.dark input{
+    background:#444;
+    color:white;
+    border:2px solid #666;
+}
+
+.dark li{
+    background:#3d3d3d;
+}
